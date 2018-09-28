@@ -8,7 +8,18 @@
 // *****
 // *****
 
+function makeSquare (size) {
+    var line = ''
+    for (var i1 = 0; i1 < size; i1++){
+        for (var i = 0; i < size; i++){
+        line = line + '*'
+    }
+    line = line + '\n'
+}
+    return line
+}
 
+console.log(makeSquare(5))
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "makeBox" which is given a width and height and returns a
@@ -20,7 +31,13 @@
 // *    *
 // ******
 
+function makeBox (width, height) {
+    var completeline = ''
+    var hollowline = ''
+    
+}
 
+console.log(makeBox(6, 4))
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "makeBanner" which is given some text and returns a banner
