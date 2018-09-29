@@ -8,6 +8,9 @@
 // > cipher('We hold these truths to be self-evident', 8)
 // 'em pwtl bpmam bzcbpa bw jm amtn-mdqlmvb'
 
+function cipher (string, shift){
+    
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

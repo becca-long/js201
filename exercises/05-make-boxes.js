@@ -32,9 +32,25 @@ console.log(makeSquare(5))
 // ******
 
 function makeBox (width, height) {
-    var completeline = ''
+    var firstline = ''
     var hollowline = ''
-    
+    var lastline = ''
+    for (var i = 0; i < width; i++){
+        firstline = firstline + '*'
+    }
+    firstline = firstline + '\n'
+    for (var i2 = 0; i2 < (height - 2); i2++){
+        hollowline = hollowline + '*'
+        for (var i3 = 0; i3 < (width - 2); i3++){
+            hollowline = hollowline + ' '
+        }
+        hollowline = hollowline + '*' + '\n'
+    }
+    for (var i4 = 0; i4 < width; i4++){
+        lastline = lastline + '*'
+    }
+    var hollowBox = firstline + hollowline + lastline
+    return hollowBox
 }
 
 console.log(makeBox(6, 4))
@@ -48,3 +64,45 @@ console.log(makeBox(6, 4))
 // ****************************
 // * Welcome to DigitalCrafts *
 // ****************************
+
+function makeBanner (text){
+    var topBanner = ''
+    var middleBanner = ''
+    var bottomBanner = ''
+    
+    for (var i = 0; i = text.length; i++){
+        topBanner = topBanner + '*'
+    }
+    topBanner = topBanner + '\n'
+    
+    middleBanner = '* ' + text + ' *' + '\n'
+   
+    for (var i2 = 0; i2 = (width + 4); i2++){
+        bottomBanner = bottomBanner + '*'
+    }
+    bottomBanner = bottomBanner + '\n'
+    
+    var totalBanner = topBanner + middleBanner + bottomBanner
+    return totalBanner
+}
+
+console.log(makeBanner('testing123'))
+
+
+function makeBannertest (text){
+    var width = arguments.length
+    var topBanner = ''
+    var middleBanner = ''
+    var bottomBanner = ''
+    
+    for (var i = 0; i = (width + 4); i++){
+        topBanner = topBanner + '*'
+    }
+    topBanner = topBanner + '\n'
+    
+    middleBanner = '* ' + text + ' *' + '\n'
+   
+    var totalBanner = topBanner + middleBanner + bottomBanner
+    return totalBanner
+}
+
