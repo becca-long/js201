@@ -70,14 +70,14 @@ function makeBanner (text){
     var middleBanner = ''
     var bottomBanner = ''
     
-    for (var i = 0; i = text.length; i++){
+    for (var i = 0; i < text.length + 4; i++){
         topBanner = topBanner + '*'
     }
     topBanner = topBanner + '\n'
     
     middleBanner = '* ' + text + ' *' + '\n'
    
-    for (var i2 = 0; i2 = (width + 4); i2++){
+    for (var i2 = 0; i2 < text.length + 4; i2++){
         bottomBanner = bottomBanner + '*'
     }
     bottomBanner = bottomBanner + '\n'
@@ -86,23 +86,4 @@ function makeBanner (text){
     return totalBanner
 }
 
-console.log(makeBanner('testing123'))
-
-
-function makeBannertest (text){
-    var width = arguments.length
-    var topBanner = ''
-    var middleBanner = ''
-    var bottomBanner = ''
-    
-    for (var i = 0; i = (width + 4); i++){
-        topBanner = topBanner + '*'
-    }
-    topBanner = topBanner + '\n'
-    
-    middleBanner = '* ' + text + ' *' + '\n'
-   
-    var totalBanner = topBanner + middleBanner + bottomBanner
-    return totalBanner
-}
-
+console.log(makeBanner('IT WORKED! WAHOO!'))
